@@ -1,5 +1,4 @@
 import requests, re
-from bs4 import BeautifulSoup
 
 """
 recognize the characters. maybe they are in the book, but MAYBE they are in the page source.
