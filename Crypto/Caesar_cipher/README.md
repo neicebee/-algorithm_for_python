@@ -6,12 +6,14 @@
 
 이것을 응용해 간단한 `Shift Cipher`를 만들 수 있다.
 
+
 ```python
     def encoding(self) -> str:
         self.msg = list(self.msg)
 ```
 
 문자열을 한 글자 한 글자 바꾸려면 리스트 타입으로 바꿔줘야 하기 때문에 list 메서드를 이용해 타입 변환을 시켜준다.
+
 
 ```python
         for i in range(len(self.msg)):
@@ -33,11 +35,13 @@ self.num을 더할 때 Z 혹은 z의 아스키코드를 넘기면 A 혹은 a의 
 
 참고로 알파벳은 26개이며 A의 아스키코드는 65, a의 아스키코드는 97이다.
 
+
 ```python
         self.rt_msg = ''.join(self.msg)
 ```
 
 `join()` => 해당 리스트 값들을 문자열로 바꿔준다.
+
 
 ```python
     def decoding(self) -> str:
@@ -58,6 +62,7 @@ self.num을 더할 때 Z 혹은 z의 아스키코드를 넘기면 A 혹은 a의 
 ```
 
 위의 encoding 메서드와 비슷하며 프로그램 내에서 객체를 생성하고 encoding 메서드를 호출하지 않고 바로 decoding 메서드를 호출하면 에러가 난다.
+
 
 ## 📌 결과
 
